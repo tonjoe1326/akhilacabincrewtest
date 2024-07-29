@@ -9,8 +9,10 @@ function checkAnswer(questionName, correctAnswer, pageNumber) {
     const answerElement = document.getElementById(`answer-${questionName}`);
     if (selectedAnswer === correctAnswer) {
         answerElement.textContent = `Correct! (Refer to ${pageNumber})`;
+        answerElement.style.color = 'green';
     } else {
         answerElement.textContent = `Incorrect. The correct answer is ${correctAnswer}. (Refer to ${pageNumber})`;
+        answerElement.style.color = 'red';
     }
     answerElement.style.display = 'block';
 }
