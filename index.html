@@ -25,18 +25,31 @@
 
         <div class="question" id="question2">
             <h2>Question 2</h2>
-            <p>What is the correct procedure for using a fire extinguisher?</p>
+            <p>What should be done in case of a medical emergency on board?</p>
             <ul>
-                <li><label><input type="radio" name="q2" value="a"> Aim at the base of the fire</label></li>
-                <li><label><input type="radio" name="q2" value="b"> Aim at the top of the flames</label></li>
-                <li><label><input type="radio" name="q2" value="c"> Spray in a circular motion</label></li>
-                <li><label><input type="radio" name="q2" value="d"> Spray intermittently</label></li>
+                <li><label><input type="radio" name="q2" value="a"> Call for a doctor on board</label></li>
+                <li><label><input type="radio" name="q2" value="b"> Administer first aid</label></li>
+                <li><label><input type="radio" name="q2" value="c"> Notify the captain immediately</label></li>
+                <li><label><input type="radio" name="q2" value="d"> All of the above</label></li>
             </ul>
-            <button type="button" onclick="checkAnswer('q2', 'a', 'Page 45')">Check Answer</button>
+            <button type="button" onclick="checkAnswer('q2', 'd', 'Page 67')">Check Answer</button>
             <p class="answer" id="answer-q2"></p>
         </div>
 
-        <!-- Add more questions as needed -->
+        <div class="question" id="question3">
+            <h2>Question 3</h2>
+            <p>How should a fire in the cabin be handled?</p>
+            <ul>
+                <li><label><input type="radio" name="q3" value="a"> Use water to extinguish the fire</label></li>
+                <li><label><input type="radio" name="q3" value="b"> Use a fire extinguisher</label></li>
+                <li><label><input type="radio" name="q3" value="c"> Move passengers away from the fire</label></li>
+                <li><label><input type="radio" name="q3" value="d"> Open a window</label></li>
+            </ul>
+            <button type="button" onclick="checkAnswer('q3', 'b', 'Page 45')">Check Answer</button>
+            <p class="answer" id="answer-q3"></p>
+        </div>
+
+        <!-- Add more questions similarly -->
 
     </div>
     <script src="script.js"></script>
